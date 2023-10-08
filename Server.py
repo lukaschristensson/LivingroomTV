@@ -9,7 +9,7 @@ HTTP_500 = b'HTTP/1.1 500 Internal Server Error'
 HTTP_401 = b'HTTP/1.1 401 Unauthorized'
 
 def num_projs():
-    return len(os.listdir(os.getcwd()+'\\js_things\\'))
+    return len(os.listdir(os.getcwd()+os.path.sep+'js_things'+os.path.sep))
 def load_file(file_name):
     with open(file_name, 'rb') as f:
         return f.read()
